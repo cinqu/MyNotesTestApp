@@ -31,7 +31,7 @@ const style = StyleSheet.create({
         marginLeft: 20,
     },
     item: {
-        backgroundColor: '#FFF',
+        backgroundColor: '#FF0',
         padding: 15,
         borderRadius: 10,
         flexDirection: 'row',

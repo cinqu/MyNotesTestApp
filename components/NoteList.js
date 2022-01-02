@@ -18,17 +18,17 @@ import AddNote from './AddNote';
 const NoteList = ({ navigation, route }) => {
     const isDarkMode = useColorScheme() === 'dark';
 
-    const [note, setNote] = useState();
+    // const [note, setNote] = useState({});
     const [noteItems, setNoteItems] = useState([]);
 
     useEffect(()=> {
         if(route.params?.note) {
             // save note here 
             const note = route.params?.note;
-            setNote(note);
+            // setNote(note);
             console.log(note);
             setNoteItems([...noteItems, note]);
-            setNote(null);
+            // setNote(null);
             // handleAddTask(note);
             // const { title, description } = route.params?.note;
             // console.log('-- route note: ' + title + ' desc: ' + description);

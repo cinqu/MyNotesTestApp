@@ -43,7 +43,7 @@ const AddNote = ( { navigation, route } ) => {
             date: choosenDate
         });
         addNote({ ...note, cDate: choosenDate});
-        addNote({ ...note, cTime: choosenTime});
+        // addNote({ ...note, cTime: choosenTime});
         // addNote({ ...note, cDate: choosenDate});
         
         // Moment(currentDate, 'MM-DD-YYYY').format('')
@@ -115,6 +115,11 @@ const AddNote = ( { navigation, route } ) => {
             </View>
             <TouchableOpacity style={styles.saveView} onPress={() => handleAddTask()}>
                 <View style={styles.saveButton}>
+                    <Text style={styles.saveButtonText}>Save</Text>
+                </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleAddTask()}>
+                <View style={{color: "red"}}>
                     <Text style={styles.saveButtonText}>Save</Text>
                 </View>
             </TouchableOpacity>
